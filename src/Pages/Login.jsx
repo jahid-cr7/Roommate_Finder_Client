@@ -118,8 +118,17 @@ const LoginPage = () => {
 
         {/* Sign Up */}
         <p className="text-left text-sm text-gray-500">
-          Don’t have an account?{" "} <br /><br />
-          Create your Roomies account by <Link className="text-blue-400 underline">Listing Your Available room</Link> or creating <Link className="text-blue-400 underline">a room wanted profile</Link> .
+          Don’t have an account? <br />
+          <br />
+          Create your Roomies account by{" "}
+          <Link to={"/signup"} className="text-blue-400 underline">
+            Listing Your Available room
+          </Link>{" "}
+          or creating{" "}
+          <Link to={"/FindRoom"} className="text-blue-400 underline">
+            a room wanted profile
+          </Link>{" "}
+          .
         </p>
         <ToastContainer />
       </form>

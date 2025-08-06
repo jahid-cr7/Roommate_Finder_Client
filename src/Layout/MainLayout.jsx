@@ -4,10 +4,14 @@ import { Outlet } from 'react-router';
 
 const MainLayout = () => {
     return (
-        <div>
-            <Headers />
-            <Outlet />
+      <div>
+        <div className="">
+          <Headers />
         </div>
+        <div>
+          <Outlet />
+        </div>
+      </div>
     );
 };
 

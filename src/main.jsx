@@ -17,6 +17,7 @@ import About from './Pages/About.jsx';
 import Mylist from './Pages/Mylist.jsx';
 import Contact from './Pages/Contact.jsx';
 import AuthProvider from './ContextAPI/AuthProvider.jsx';
+import FindRoom from "./Pages/findRoom.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -25,29 +26,33 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home></Home>
+        element: <Home></Home>,
       },
       {
-        path: 'about',
-        element: <About></About>
+        path: "about",
+        element: <About></About>,
       },
       {
         path: "login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "signup",
-        element: <SignUp></SignUp>
+        element: <SignUp></SignUp>,
       },
       {
         path: "mylist",
-        element: <Mylist />
+        element: <Mylist />,
       },
       {
         path: "contact",
-        element: <Contact />
-      }
-    ]
+        element: <Contact />,
+      },
+      {
+        path: "/findroom",
+        element: <FindRoom />,
+      },
+    ],
   },
 ]);
 

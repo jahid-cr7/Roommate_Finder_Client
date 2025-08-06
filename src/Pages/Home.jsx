@@ -21,30 +21,35 @@ const Home = () => {
 
         {/* Card Option */}
         <div className="flex justify-center gap-10 mt-6">
-          <div className="card w-[400px] bg-white card-sm shadow-lg">
-            <div className="card-body px-8">
-              <h2 className="text-2xl font-semibold mb-3">Need a Roommate?</h2>
+          <Link to={"/signup"}>
+            <div className="card w-[400px] bg-white card-sm shadow-lg">
+              <div className="card-body px-8">
+                <h2 className="text-2xl font-semibold mb-3">
+                  Need a Roommate?
+                </h2>
 
-              <div className=" card-actions">
-                <Link className="bg-[#1e94a6] px-8 py-2 rounded-2xl text-white text-[16px] flex items-center gap-4">
-                  List Your Room <FaLongArrowAltRight></FaLongArrowAltRight>
-                </Link>
+                <div className=" card-actions">
+                  <Link className="bg-[#1e94a6] px-8 py-2 rounded-2xl text-white text-[16px] flex items-center gap-4">
+                    List Your Room <FaLongArrowAltRight></FaLongArrowAltRight>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
           <div className="card w-[400px] bg-white card-sm shadow-lg">
             <div className="card-body px-8">
-              <h2 className="text-2xl font-semibold mb-3">Looking for a Place?</h2>
+              <h2 className="text-2xl font-semibold mb-3">
+                Looking for a Place?
+              </h2>
 
               <div className=" card-actions">
                 <Link className="bg-[#ff9767] px-8 py-2 rounded-2xl text-white text-[16px] flex items-center gap-4">
-                  Create Your Profile <FaLongArrowAltRight></FaLongArrowAltRight>
+                  Create Your Profile{" "}
+                  <FaLongArrowAltRight></FaLongArrowAltRight>
                 </Link>
               </div>
             </div>
           </div>
-
-         
         </div>
       </section>
     </div>
